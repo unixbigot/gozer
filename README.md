@@ -85,9 +85,9 @@ christopher_biggs    e5cdREDACTEDf921 192.168.191.1--192.168.191.254 devices bel
   
 * **Why not use existing zerotier-cli listpeers?**
 
-Zerotier-cli doesn't tell you the IP of the other peers.  
+  Zerotier-cli doesn't tell you the IP of the other peers.  
 
-I could have fixed that, but I wanted to play around with Go.
+  I could have fixed that, but I wanted to play around with Go.
 
 * **Gozer?**
 
