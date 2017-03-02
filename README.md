@@ -5,12 +5,12 @@ Zerotier is a great (freemium) service that allows your Mac, Linux, Windows, iOS
 Android systems to form a "virtual LAN" no matter where they are in the world.
 
 With Zerotier you can manage your servers even if they are behind a distant
-firewall, or mobile, or dynamic IP.distant
+firewall, or mobile, or dynamic IP.
 
 I wrote this client becuase I wanted a way (besides using ZeroTier's web console)
-to find the status and IP of all the hosts on my zerotier SDN.
+to quickly find the status and IP of all the hosts on my zerotier SDN.
 
-By default gozer shows your connected network(s)
+By default gozer shows your connected network(s):
 
 ```bash
 chris@Auric: () You are in ~/src/go/me/gozer (master)
@@ -18,7 +18,7 @@ So what are you going to DO about it? $ gozer
 christopher_biggs    e5cdREDACTEDf921 192.168.191.1--192.168.191.254 devices belonging to Christopher Biggs
 ```
 
-With flags, it can show all the hosts:
+With flags, it can show all the peers:
 
 ```bash
 chris@Auric: () You are in ~/src/go/me/gozer (master)
@@ -83,7 +83,7 @@ christopher_biggs    e5cdREDACTEDf921 192.168.191.1--192.168.191.254 devices bel
   
   I welcome a pull request to query multiple accounts at once.
   
-* **Why not use existing zerotier-cli listpeers?**
+* **Why not use existing `zerotier-cli listpeers`?**
 
   Zerotier-cli doesn't tell you the IP of the other peers.  
 
