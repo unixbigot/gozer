@@ -57,9 +57,19 @@ christopher_biggs    e5cdREDACTEDf921 192.168.191.1--192.168.191.254 devices bel
      vulpine         bfSEKRIT5a []
 ```
 
+# Installation
+
+ 1. `go get github.com/unixbigot/gozer`
+ 1. Login to zerotier.com and create an API key
+ 1. Create a network via the Zerotier web api, or choose an existing one
+ 1. save your API key as ~/.gozer-token
+ 1. Join a network: `sudo zerotier-cli join <id>`
+ 1. Use the zerotier web console to approve the join
+ 1. Run `gozer --all`
+ 
 # FAQ
 
-* **What if I do not own the network**
+* **What if I do not own the network I want to list**
 
   I think you need to be able to authenticate as the network owner to 
   use the relevant parts of the API, sorry.
