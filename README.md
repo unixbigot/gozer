@@ -13,7 +13,7 @@ to find the status and IP of all the hosts on my zerotier SDN.
 By default gozer shows your connected network(s)
 
 ```bash
-ris@Auric: () You are in ~/src/go/me/gozer (master)
+chris@Auric: () You are in ~/src/go/me/gozer (master)
 So what are you going to DO about it? $ gozer
 christopher_biggs    e5cdREDACTEDf921 192.168.191.1--192.168.191.254 devices belonging to Christopher Biggs
 ```
@@ -56,3 +56,25 @@ christopher_biggs    e5cdREDACTEDf921 192.168.191.1--192.168.191.254 devices bel
      umbriel         83SEKRITcb [192.168.191.124               ]
      vulpine         bfSEKRIT5a []
 ```
+
+# FAQ
+
+* **What if I do not own the network**
+
+  I think you need to be able to authenticate as the network owner to 
+  use the relevant parts of the API, sorry.
+
+* **What if I am joined to several networks with different owners?**
+
+  You need to authenticate as the network owner for each.
+
+  You will need to install an API key for each owner, and use the command
+  line options to select which owner to authenticate as.
+  
+  I welcome a pull request to query multiple accounts at once.
+
+* **Gozer?**
+
+   Gozer the Traveler. He will come in one of the pre-chosen forms. During the rectification of the Vuldrini, the traveler came  as a large and moving Torg! Then, during the third reconciliation of the last of the McKetrick supplicants, they chose a new form for him: that of a giant Slor! Many Shuvs and Zuuls knew what it was to be roasted in the depths of the Slor that day, I can tell you!
+   
+   
