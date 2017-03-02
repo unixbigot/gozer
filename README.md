@@ -82,6 +82,12 @@ christopher_biggs    e5cdREDACTEDf921 192.168.191.1--192.168.191.254 devices bel
   line options to select which owner to authenticate as.
   
   I welcome a pull request to query multiple accounts at once.
+  
+* **Why not use existing zerotier-cli listpeers?**
+
+Zerotier-cli doesn't tell you the IP of the other peers.  
+
+I could have fixed that, but I wanted to play around with Go.
 
 * **Gozer?**
 
