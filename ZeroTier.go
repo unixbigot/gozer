@@ -61,8 +61,8 @@ func (client *ZeroTierClient) ListNetworks(print bool) (*ZeroTierNetworkList, er
 
 // GetNetworkMembers fetches the members of a network as a map of ID to ???
 // The documentation doesn't say what the integer field in the map means.
-func (client *ZeroTierClient) GetNetworkMembers(networkID string) (members map[string]int, err error) {
-	members = make(map[string]int)
+func (client *ZeroTierClient) GetNetworkMembers(networkID string) (members []map[string]interface{}, err error) {
+	members = make([]map[string]interface{}, 0)
 	logger.Debugln("GetNetworkMembers", networkID)
 
 	err = client.getJSON(
@@ -107,7 +107,8 @@ func (client *ZeroTierClient) GetNetworkMemberDetails(network *ZeroTierNetwork, 
 			logger.Error(err, "Can't list members")
 			return members
 		}
-		for id := range allMembers {
+		for _, v := range allMembers {
+			id := v["config"].(map[string]interface{})["address"].(string)
 			memberIDs = append(memberIDs, id)
 		}
 	}
